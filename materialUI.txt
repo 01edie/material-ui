@@ -1,0 +1,8 @@
+npm install @mui/material @emotion/react @emotion/styled
+
+core library
+@mui/material
+
+
+material icons
+npm install @mui/icons-material

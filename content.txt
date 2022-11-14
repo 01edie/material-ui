@@ -1,0 +1,32 @@
+Typography component:
+ -13 variants -major 10 - h1,h2,h3,h4,h5,h6,subtitle1,subtitle2,body1(default),body2
+ -component prop for symantic use like component = 'h1';
+ -gutterBottom prop for bottom margin
+
+Button component:
+ -3 variant text,outlined,contained in grabbing attention order low to high
+ -props: color,size,startIcon,endIcon,disableElevation,disableRIpple
+
+IconButton:
+ -to use only icon in button , wrap the icon in this component
+
+ButtonGroup:
+ -props: variant,orientation,size
+
+ToggleButton:
+ -wrapped in ToggleButtonGroup
+ -props:value
+ToggleButtonGroup:
+ -props:value,color,size, orientation, exclusive
+
+TextField:
+  - input text TextField
+  - props: label, variant(outlined(default),filled,standard), size, color,
+           required, type='<type>', disabled, InputProps={{readOnly: true}}
+           error, InputProps={{startAdorment:InputAdornment component, endAdornment: InputAdornment component}}
+
+Select using TextField and MenuItem:
+ -props: in TextField : select, value(for controlled component), fullWidth, SelectProps={{multiple:true}},
+  color,helperText,error,size
+
+
