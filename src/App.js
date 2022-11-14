@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import AxiosTest from './components/AxiosTest'
 // import MuiButton from './components/MuiButton'
 // import ToggleButton from './components/MuiToggleButton'
 // import MuiTypography from './components/MuiTypography'
@@ -8,7 +9,7 @@ import './App.css'
 // import MuiRadioButton from './components/MuiRadioButton'
 // import MuiCheckBox from './components/MuiCheckBox'
 // import MuiLayout from './components/MuiLayout'
-import MuiCard from './components/MuiCard'
+// import MuiCard from './components/MuiCard'
 
 
 const App = () => {
@@ -21,7 +22,11 @@ const App = () => {
       {/* <MuiRadioButton></MuiRadioButton> */}
       {/* <MuiCheckBox></MuiCheckBox> */}
       {/* <MuiLayout></MuiLayout> */}
-      <MuiCard></MuiCard>
+      {/* <MuiCard></MuiCard> */}
+
+
+      <AxiosTest/>
+
 
 
 

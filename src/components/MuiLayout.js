@@ -30,6 +30,10 @@ import React from "react";
 //provides white background
 // sections of ui and also visual hierarchy
 //used under the hood card component
+
+
+//there is some shorter name for few props / bgcolor,p(by default it is multplied by 8, unit px) 
+//  css properties https://mui.com/system/properties/
 const MuiLayout = () => {
   return (
     <Paper sx={{padding:'32px'}} elevation={4}>
@@ -55,8 +59,7 @@ const MuiLayout = () => {
         >
           Abc
         </Box>
-        {/* there is some shorter name for few props / bgcolor,p(by default it is multplied by 8, unit px) */}
-        {/* css properties https://mui.com/system/properties/ */}
+        
         <Box
           display="flex"
           height="100px"
