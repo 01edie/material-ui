@@ -3,10 +3,13 @@ import {
   ImageList,
   ImageListItem,
   Box,
-  ImageListItemBar
+  ImageListItemBar,
 } from "@mui/material";
 import React from "react";
 import { itemData, itemData2, itemData3 } from "./data";
+
+//ImageList->ImageListItem(inside ImageListItemBar)
+//ImageListItemBar props: position, subtitle, actionIcon
 
 const MuiImageList = () => {
   return (
@@ -18,10 +21,10 @@ const MuiImageList = () => {
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
-                src={`${item.img}`}
-                width="162px"
-                height="162px"
+                src={`${item.img}?w=162&h=162&fit=crop&auto=format&dpr=2`}
+               
                 alt={item.title}
+                loading='lazy'
               />
               <ImageListItemBar title={item.title} />
             </ImageListItem>
@@ -37,10 +40,9 @@ const MuiImageList = () => {
         {itemData2.map((item) => (
           <ImageListItem key={item.img}>
             <img
-              src={`${item.img}`}
-              width="162px"
-              height="162px"
+              src={`${item.img}?w=248&h=162&fit=crop&auto=format&dpr=2`}
               alt={item.title}
+              loading='lazy'
             />
           </ImageListItem>
         ))}
@@ -49,7 +51,13 @@ const MuiImageList = () => {
         <ImageList variant="masonry" cols={3} gap={8}>
           {itemData3.map((item) => (
             <ImageListItem key={item.img}>
-              <img src={`${item.img}`} width="162px" alt={item.title} />
+              <img
+                src={`${item.img}?w=248&fit=crop&auto=format&dpr=2`}
+                alt={item.title}
+                loading='lazy'
+              />
+              <ImageListItemBar title={item.title} />
+
             </ImageListItem>
           ))}
         </ImageList>
