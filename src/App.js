@@ -1,6 +1,5 @@
-import React from 'react'
-import './App.css'
-import AxiosTest from './components/AxiosTest'
+import React from "react";
+import "./App.css";
 // import MuiButton from './components/MuiButton'
 // import ToggleButton from './components/MuiToggleButton'
 // import MuiTypography from './components/MuiTypography'
@@ -11,10 +10,16 @@ import AxiosTest from './components/AxiosTest'
 // import MuiLayout from './components/MuiLayout'
 // import MuiCard from './components/MuiCard'
 
+// import AxiosTest from './components/AxiosTest'
+// import MuiSwitch from './components/MuiSwitch'
+// import MuiRating from "./components/MuiRating";
+// import MuiAutoCmplete from "./components/MuiAutoCmplete";
+// import MuiAccordion from "./components/MuiAccordion";
+import MuiImageList from "./components/MuiImageList";
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       {/* <MuiTypography/> */}
       {/* <MuiButton></MuiButton> */}
       {/* <ToggleButton></ToggleButton> */}
@@ -24,14 +29,14 @@ const App = () => {
       {/* <MuiLayout></MuiLayout> */}
       {/* <MuiCard></MuiCard> */}
 
-
-      <AxiosTest/>
-
-
-
-
+      {/* <AxiosTest/> */}
+      {/* <MuiSwitch></MuiSwitch> */}
+      {/* <MuiRating /> */}
+      {/* <MuiAutoCmplete/> */}
+      {/* <MuiAccordion/> */}
+      <MuiImageList />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

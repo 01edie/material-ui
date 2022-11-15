@@ -9,15 +9,16 @@ import React from "react";
 //layout related component
 
 // Stack
-//is used to amnage layout one dimension , vertical|horizontal
+//is used to manage layout one dimension , vertical|horizontal
 // by default stack is display:flex and flex-direction='column'
 //spacing also get multiplied by 8(px)
+//there is divider prop in Stack, like divider={<Divider orientation="vertical" flexItem />}
 
 // Grid
 // 2 dimensional and responsive layout
 // Grid Container and Grid Item
 // flexbox module
-//12 cols, each item width -1 or more col
+//12 cols, each item width -> 1 or more col
 //5 breakpoints- xs-mobile, sm-tablet, md-desktop, lg and xl - larger monitors
 //-we can assign integer values to each breakpoint for responsiveness
 // size and above order
