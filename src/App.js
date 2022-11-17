@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+
+
 // import MuiButton from './components/MuiButton'
 // import ToggleButton from './components/MuiToggleButton'
 // import MuiTypography from './components/MuiTypography'
@@ -15,7 +17,26 @@ import "./App.css";
 // import MuiRating from "./components/MuiRating";
 // import MuiAutoCmplete from "./components/MuiAutoCmplete";
 // import MuiAccordion from "./components/MuiAccordion";
-import MuiImageList from "./components/MuiImageList";
+// import MuiImageList from "./components/MuiImageList";
+// import MuiNavbar from "./components/MuiNavbar";
+// import MuiLink from "./components/MuiLink";
+// import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
+// import MuiDrawer from "./components/MuiDrawer";
+// import MuiSpeedDial from "./components/MuiSpeedDial";
+// import MuiBottomNavigation from "./components/MuiBottomNavigation";
+// import MuiAvatar from "./components/MuiAvatar";
+// import MuiBadge from "./components/MuiBadge";
+// import MuiList from "./components/MuiList";
+import MuiChip from "./components/MuiChip";
+import MuiTooltip from "./MuiTooltip";
+
+
+
+
+
+
+
+
 
 const App = () => {
   return (
@@ -34,7 +55,24 @@ const App = () => {
       {/* <MuiRating /> */}
       {/* <MuiAutoCmplete/> */}
       {/* <MuiAccordion/> */}
-      <MuiImageList />
+      {/* <MuiImageList /> */}
+
+      {/* navigation related component -------------------------*/}
+      {/* <MuiNavbar/> */}
+      {/* <MuiLink /> */}
+      {/* <MuiBreadcrumbs/> */}
+      
+      {/* <MuiDrawer/> */}
+      {/* <MuiSpeedDial/> */}
+      {/* <MuiBottomNavigation/> */}
+
+      {/* data display components -----------------------------*/}
+      {/* <MuiAvatar /> */}
+      {/* <MuiBadge/> */}
+      {/* <MuiList/> */}
+      {/* <MuiChip/> */}
+      <MuiTooltip/>
+      
     </div>
   );
 };
