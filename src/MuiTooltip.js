@@ -1,11 +1,15 @@
-import { Tooltip } from '@mui/material'
+import { Delete } from '@mui/icons-material'
+import { Tooltip, IconButton } from '@mui/material'
 import React from 'react'
 
 
-Tooltip
-const MuiTooltip = () => {
+
+//informative text when users hover over, tap or focus on=> specially for icons
+//props: title, placement, arrow, enterDelay, leaveDelay
+const MuiTooltip = () => { 
   return (
-    <div>MuiTooltip</div>
+    <Tooltip title='delete' placement='right-start' arrow enterDelay={1000} leaveDelay={200}><IconButton>
+      <Delete/></IconButton></Tooltip>
   )
 }
 
