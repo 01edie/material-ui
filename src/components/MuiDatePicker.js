@@ -1,6 +1,6 @@
 import { Stack, TextField } from "@mui/material";
 import React, { useState } from "react";
-import { DatePicker } from "@mui/lab";
+import { DatePicker } from "@mui/x-date-pickers";
 
 //step1: import Localization provider like context and pass AdapterDateFns to dateAdapter
 //date library and date adapters

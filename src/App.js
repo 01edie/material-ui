@@ -35,23 +35,39 @@ import "./App.css";
 // import MuiSkeleton from "./components/MuiSkeleton";
 // import MuiLoadingButton from "./components/MuiLoadingButton";
 // import { LocalizationProvider } from "@mui/lab";
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import MuiDatePicker from "./components/MuiDatePicker";
+// import { LocalizationProvider } from "@mui/x-date-pickers";
+// import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+// import MuiDatePicker from "./components/MuiDatePicker";
+// import MuiTab from "./components/MuiTab";
+// import MuiTimeline from "./components/MuiTimeline";
+import MuiResponsiveness from "./components/MuiResponsiveness";
 
 
+import { createTheme, colors, ThemeProvider } from '@mui/material'
 
 
-
-
-
-
-
+const theme = createTheme({
+status:{
+  danger: '#efefef',
+},
+palette:{
+  secondary:{
+    main: colors.orange[500]
+  },
+  // neutral:{
+  //   main: colors.grey[500]
+  // }
+}
+})
+//object structure should match the default structure
 
 
 const App = () => {
   return (
-    <LocalizationProvider className="App" dateAdapter={AdapterDayjs}>
+    // <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <ThemeProvider theme={theme}>
+    <div className="App">
+    
       {/* <MuiTypography/> */}
       {/* <MuiButton></MuiButton> */}
       {/* <ToggleButton></ToggleButton> */}
@@ -88,20 +104,23 @@ const App = () => {
       {/* <MuiAlert/> */}
       {/* <MuiSnackBar/> */}
       {/* <MuiDialog/> */}
-              {/* progress related  components */}
+      {/* progress related  components */}
       {/* <MuiProgress/> */}
       {/* <MuiSkeleton/> */}
 
-
       {/* lab components ----------------------------------------------------*/}
       {/* <MuiLoadingButton/> */}
-      <MuiDatePicker/>
+      
 
+      {/* <MuiDatePicker /> */}
 
-
-
-
-    </LocalizationProvider>
+      {/* <MuiTab/> */}
+      {/* <MuiTimeline/> */}
+      {/* ...................... */}
+      <MuiResponsiveness/>
+      </div>
+      </ThemeProvider>
+    // </LocalizationProvider>
   );
 };
 
