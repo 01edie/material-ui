@@ -24,7 +24,7 @@ import "./App.css";
 // import MuiBottomNavigation from "./components/MuiBottomNavigation";
 // import MuiAvatar from "./components/MuiAvatar";
 // import MuiBadge from "./components/MuiBadge";
-// import MuiList from "./components/MuiList";
+import MuiList from "./components/MuiList";
 // import MuiChip from "./components/MuiChip";
 // import MuiTooltip from "./MuiTooltip";
 // import MuiTable from "./components/MuiTable";
@@ -42,84 +42,79 @@ import "./App.css";
 // import MuiTimeline from "./components/MuiTimeline";
 import MuiResponsiveness from "./components/MuiResponsiveness";
 
-
-import { createTheme, colors, ThemeProvider } from '@mui/material'
-
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
-status:{
-  danger: '#efefef',
-},
-palette:{
-  secondary:{
-    main: colors.orange[500]
+  status: {
+    danger: "#efefef",
   },
-  // neutral:{
-  //   main: colors.grey[500]
-  // }
-}
-})
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    // neutral:{
+    //   main: colors.grey[500]
+    // }
+  },
+});
 //object structure should match the default structure
-
 
 const App = () => {
   return (
     // <LocalizationProvider dateAdapter={AdapterDayjs}>
     <ThemeProvider theme={theme}>
-    <div className="App">
-    
-      {/* <MuiTypography/> */}
-      {/* <MuiButton></MuiButton> */}
-      {/* <ToggleButton></ToggleButton> */}
-      {/* <MuiTextField></MuiTextField> */}
-      {/* <MuiRadioButton></MuiRadioButton> */}
-      {/* <MuiCheckBox></MuiCheckBox> */}
-      {/* <MuiLayout></MuiLayout> */}
-      {/* <MuiCard></MuiCard> */}
+      <div className="App">
+        {/* <MuiTypography/> */}
+        {/* <MuiButton></MuiButton> */}
+        {/* <ToggleButton></ToggleButton> */}
+        {/* <MuiTextField></MuiTextField> */}
+        {/* <MuiRadioButton></MuiRadioButton> */}
+        {/* <MuiCheckBox></MuiCheckBox> */}
+        {/* <MuiLayout></MuiLayout> */}
+        {/* <MuiCard></MuiCard> */}
 
-      {/* <AxiosTest/> */}
-      {/* <MuiSwitch></MuiSwitch> */}
-      {/* <MuiRating /> */}
-      {/* <MuiAutoCmplete/> */}
-      {/* <MuiAccordion/> */}
-      {/* <MuiImageList /> */}
+        {/* <AxiosTest/> */}
+        {/* <MuiSwitch></MuiSwitch> */}
+        {/* <MuiRating /> */}
+        {/* <MuiAutoCmplete/> */}
+        {/* <MuiAccordion/> */}
+        {/* <MuiImageList /> */}
 
-      {/* navigation related component -------------------------*/}
-      {/* <MuiNavbar/> */}
-      {/* <MuiLink /> */}
-      {/* <MuiBreadcrumbs/> */}
+        {/* navigation related component -------------------------*/}
+        {/* <MuiNavbar/> */}
+        {/* <MuiLink /> */}
+        {/* <MuiBreadcrumbs/> */}
 
-      {/* <MuiDrawer/> */}
-      {/* <MuiSpeedDial/> */}
-      {/* <MuiBottomNavigation/> */}
+        {/* <MuiDrawer/> */}
+        {/* <MuiSpeedDial/> */}
+        {/* <MuiBottomNavigation/> */}
 
-      {/* data display components -----------------------------*/}
-      {/* <MuiAvatar /> */}
-      {/* <MuiBadge/> */}
-      {/* <MuiList/> */}
-      {/* <MuiChip/> */}
-      {/* <MuiTooltip/> */}
-      {/* <MuiTable/> */}
-      {/* feedback related components ------------------------------ */}
-      {/* <MuiAlert/> */}
-      {/* <MuiSnackBar/> */}
-      {/* <MuiDialog/> */}
-      {/* progress related  components */}
-      {/* <MuiProgress/> */}
-      {/* <MuiSkeleton/> */}
+        {/* data display components -----------------------------*/}
+        {/* <MuiAvatar /> */}
+        {/* <MuiBadge/> */}
+        <MuiList />
+        {/* <MuiChip/> */}
+        {/* <MuiTooltip/> */}
+        {/* <MuiTable/> */}
+        {/* feedback related components ------------------------------ */}
+        {/* <MuiAlert/> */}
+        {/* <MuiSnackBar/> */}
+        {/* <MuiDialog/> */}
+        {/* progress related  components */}
+        {/* <MuiProgress/> */}
+        {/* <MuiSkeleton/> */}
 
-      {/* lab components ----------------------------------------------------*/}
-      {/* <MuiLoadingButton/> */}
-      
+        {/* lab components ----------------------------------------------------*/}
+        {/* <MuiLoadingButton/> */}
 
-      {/* <MuiDatePicker /> */}
+        {/* <MuiDatePicker /> */}
 
-      {/* <MuiTab/> */}
-      {/* <MuiTimeline/> */}
-      {/* ...................... */}
-      <MuiResponsiveness/>
+        {/* <MuiTab/> */}
+        {/* <MuiTimeline/> */}
+        {/* ...................... */}
+        {/* <MuiResponsiveness/> */}
       </div>
-      </ThemeProvider>
+    </ThemeProvider>
     // </LocalizationProvider>
   );
 };
